@@ -31,7 +31,7 @@ public class DessertShoppe {
 
 public class Candy extends DessertItem {
 
-   private double pound;
+    private double pound;
     private int pricePound;
 
     public Candy(String name, double pound, int pricePound) {
@@ -40,7 +40,7 @@ public class Candy extends DessertItem {
         this.pricePerPound = pricePound;
     }
 
-       public int getPricePound() {
+        public int getPricePound() {
         return pricePound;
     }
 
@@ -74,7 +74,7 @@ public class Cookie extends DessertItem {
 }
 public class IceCream extends DessertItem {
 
-   private int cost;
+    private int cost;
     public IceCream(String name, int cost) {
         super(name);
         this.cost = cost;
@@ -116,5 +116,4 @@ public class Checkout {
     public void clear() {
         lists.clear();
     }
-
 
