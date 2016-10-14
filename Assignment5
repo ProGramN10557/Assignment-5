@@ -25,6 +25,25 @@
     return new String(sb);
     }
     }
+    public class Candy extends DessertItem {
+    private double pound;
+    private int pricePound;
+    public Candy(String name, double pound, int pricePound) {
+        super(name);
+        this.pound = pound;
+        this.pricePerPound = pricePound;
+        }
+
+        public int getPricePound() {
+        return pricePound;
+    }
+
+    public double getPound() {
+        return pound;
+    }
+}
+
+
     
 
         
