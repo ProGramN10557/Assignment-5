@@ -8,3 +8,25 @@
     public final String getName() {
         return name;
     }
+    public abstract int getCost();
+   }
+    public class DessertShoppe {
+    public static final double TAX_RATE = 4.5;
+    public static final String storeName = "Dessert Shoppe and Store";
+    public int maximumSizeOfItemName = 100;
+    public int widthOfCost = 9;
+    public static String dollarsCents(int cent) {
+    StringBuilder sb = new StringBuilder();
+    int BeforeDecimal = cent / 100;
+    int AfterDecimal = cent % 100;
+    sb.append(BeforeDecimal <= 0? "" : BeforeDecimal);
+    sb.append(".");
+    sb.append(AfterDecimal < 10? "0" + AfterDecimal: AfterDecimal);
+    return new String(sb);
+    }
+    }
+    
+
+        
+
+
